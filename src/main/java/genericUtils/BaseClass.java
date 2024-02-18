@@ -18,7 +18,7 @@ public class BaseClass {
 	
 	@Parameters("browser")
 	@BeforeClass
-	public void beforeClass(String browserName) {
+	public void beforeClass(@Optional("Hello2browser") String browserName) {
 		System.out.println("Launching Browser in "+browserName);
 	}
 	
